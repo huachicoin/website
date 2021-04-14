@@ -380,48 +380,6 @@ body .one .bsa_it_ad .bsa_it_d { padding: 0; font-size: 12px; color: #333; }
 body .one .bsa_it_p { display: none; }
 body #bsap_aplink, body #bsap_aplink:hover { display: block; font-size: 10px; margin: 12px 15px 0; text-align: center; }
 
-.ads {
-  position: fixed;
-  left: 10px;
-  bottom: 10px;
-  box-sizing: border-box;
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  z-index: 99;
-  text-align: center;
-  max-width: 200px;
-}
-
-.ads a {
-  color: black;
-}
-
-.ad-header {
-  margin: 0 0 -2px 0px;
-  background: white;
-  border-radius: 3px 3px 0 0;
-  overflow: hidden;
-}
-.ad-header a {
-  float: right;
-  border-left: 1px solid #f3f3f3;
-  padding:10px;
-  line-height: 100%;
-  font-weight: bold;
-  text-transform: uppercase;
-  text-align: center;
-  color: black;
-}
-.ad-header a:hover {
-  background: #eee;
-}
-
-.ads .promo {
-  position: absolute;
-  top: -195px;
-  left: 0;
-}
-
 .message {
   max-width: 550px;
   margin: 50px auto 0;
@@ -475,105 +433,6 @@ body #bsap_aplink, body #bsap_aplink:hover { display: block; font-size: 10px; ma
 .socials .twitter-share-button {
   width: 85px  !important;
 }
-	  
-#carbonads {
-  --width: 180px;
-  --font-size: 14px;
-}
-
-#carbonads {
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", Helvetica, Arial, sans-serif;
-  display: block;
-  overflow: hidden;
-  margin-bottom: 20px;
-  max-width: var(--width);
-  border-radius: 4px;
-  text-align: center;
-  box-shadow: 0 0 0 1px hsla(0, 0%, 0%, .1);
-  background-color: hsl(0, 0%, 98%);
-  font-size: var(--font-size);
-  line-height: 1.5;
-}
-
-#carbonads a {
-  color: inherit;
-  text-decoration: none;
-}
-
-#carbonads a:hover {
-  color: inherit;
-}
-
-#carbonads span {
-  position: relative;
-  display: block;
-  overflow: hidden;
-}
-
-.carbon-img {
-  display: block;
-  margin-bottom: 8px;
-  max-width: var(--width);
-  line-height: 1;
-}
-
-.carbon-img img {
-  display: block;
-  margin: 0 auto;
-  max-width: var(--width) !important;
-  width: var(--width);
-  height: auto;
-}
-
-.carbon-text {
-  display: block;
-  padding: 0 1em 8px;
-}
-
-.carbon-poweredby {
-  display: block;
-  padding: 10px var(--font-size);
-  background: repeating-linear-gradient(-45deg, transparent, transparent 5px, hsla(0, 0%, 0%, .025) 5px, hsla(0, 0%, 0%, .025) 10px) hsla(203, 11%, 95%, .4);
-  text-transform: uppercase;
-  letter-spacing: .5px;
-  font-weight: 600;
-  font-size: 9px;
-  line-height: 0;
-}
-
-@media only screen and (min-width: 320px) and (max-width: 759px) {
-  #carbonads {
-    float: none;
-    margin: 0 auto;
-    max-width: 330px;
-  }
-  #carbonads span {
-    position: relative;
-  }
-  #carbonads > span {
-    max-width: none;
-  }
-  .carbon-img {
-    float: left;
-    margin: 0;
-  }
-
-  .carbon-img img {
-    max-width: 130px !important;
-  }
-  .carbon-text {
-    float: left;
-    margin-bottom: 0;
-    padding: 8px 20px;
-    text-align: left;
-    max-width: calc(100% - 130px - 3em);
-  }
-  .carbon-poweredby {
-    left: 130px;
-    bottom: 0;
-    display: block;
-    width: 100%;
-  }}}
 	</style>
 	<script>
 	  $(document).ready(function(){
@@ -602,7 +461,7 @@ body #bsap_aplink, body #bsap_aplink:hover { display: block; font-size: 10px; ma
   	    <img src="phones.png" alt="phones">
       </section>
 	    
-	    <section class="page2">
+	    <section id="contract" class="page2">
 	      <div class="page_container">
           <h1>Ready-to-use plugin</h1>
           <h2>All you need is an HTML markup, call the script and BAM!</h2>
@@ -620,7 +479,7 @@ body #bsap_aplink, body #bsap_aplink:hover { display: block; font-size: 10px; ma
 	      </div>
       </section>
 	    
-	    <section class="page3">
+	    <section id="how-to-page" class="page3">
 	      <div class="page_container">
           <h1>Pretty Neat Eh?</h1>
           <h2>You can customise the animation timing, the selector or even the animation easing using CSS3. I can't wait to see what you guys will come up with. Don't forget to grab them for free on Github'</h2>
@@ -630,8 +489,7 @@ body #bsap_aplink, body #bsap_aplink:hover { display: block; font-size: 10px; ma
   	    </div>
       </section>
     </div>
-    <a class="back" href="#">Back to The Pete Design</a>
-    <a href="https://github.com/peachananr/onepage-scroll"><img style="position: absolute; top: 0; right: 0; border: 0;" src="https://s3.amazonaws.com/github/ribbons/forkme_right_darkblue_121621.png" alt="Fork me on GitHub"></a>
+    <a class="back" href="#how-to-page">¿Como comprar huachicoin?</a>
   </div>
 
 
