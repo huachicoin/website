@@ -196,6 +196,20 @@
       width: 410px;
       clear: both;
     }
+    .price {
+      text-align: center;
+      color: #000;
+      margin-top: -5px;
+      width: 410px;
+      clear: both;
+    }
+    .letras-chiquitas {
+      margin-top: -5px;
+      width: 410px;
+      clear: both;
+      font-size: smaller;
+      color: rgba(0,0,0,0.6);
+    }
     .credit a {
       color: rgba(0,0,0,0.85);
       text-decoration: none;
@@ -379,6 +393,19 @@
       margin-right: auto;
       right: 0;
     }
+    pre code {
+    scrollbar-color: #666 #201c29;
+    background: 0 0;
+    white-space: pre;
+    -webkit-overflow-scrolling: touch;
+    overflow-x: scroll;
+    display: block;
+    max-width: 100%;
+    min-width: 100px;
+    font-size: 16px;
+    padding: 15px 20px 12px 22px;
+    line-height: 1.75;
+    }
 	  
 body .one .bsa_it_ad { background: transparent; border: none; font-family: inherit; padding: 0 15px 0 10px; margin: 0; text-align: center; }
 body .one .bsa_it_ad:hover img { -moz-box-shadow: 0 0 3px #000; -webkit-box-shadow: 0 0 3px #000; box-shadow: 0 0 3px #000; }
@@ -442,17 +469,7 @@ body #bsap_aplink, body #bsap_aplink:hover { display: block; font-size: 10px; ma
 .socials .twitter-share-button {
   width: 85px  !important;
 }
-	</style>
-	<script>
-	  $(document).ready(function(){
-      $(".main").onepage_scroll({
-        sectionContainer: "section",
-        responsiveFallback: 600,
-        loop: true
-      });
-		});
-		
-	</script>
+</style>
 </head>
 <body>
   <div class="wrapper">
@@ -463,6 +480,10 @@ body #bsap_aplink, body #bsap_aplink:hover { display: block; font-size: 10px; ma
           <h1>Huachicoin</h1>
           <h2>Huachicoin la cryptomoneda del futuro</h2>
           <p class="credit">Crypto creada por Mexicanos para el mundo</p>
+          <p class="price">Precio en BNB : <strong><span id="precio_bnb">$</span></strong>*</p>
+          <p class="price">Precio en USD : <strong><span id="precio_usd">$</span></strong>*</p>
+          <p class="price">Precio en Pesos Mexicanos : <strong><span id="precio_mxn">$</span></strong>*</p>
+          <p class="letras-chiquitas">* el precio se actualiza cada hora, puede variar en pancakeswap</p>
           <div class="btns">
   	        <a class="reload btn" href="https://exchange.pancakeswap.finance/#/swap?outputCurrency=0x0863d3605f2b16183b500e3b5fe205b46739e3e6">🥞Comprar en Pancakeswap🥞</a>
   	      </div>
@@ -496,5 +517,20 @@ body #bsap_aplink, body #bsap_aplink:hover { display: block; font-size: 10px; ma
     </div>
     <a class="back" href="#how-to-page">¿Como comprar huachicoin?</a>
   </div>
+  <script>
+    $(document).ready(function(){
+      $(".main").onepage_scroll({
+        sectionContainer: "section",
+        responsiveFallback: 600,
+        loop: true
+      });
+
+      $.getJSON("https://raw.githubusercontent.com/huachicoin/Huachicoin_Scraper/main/huachicoin_data.json", function(json) {
+          $("#precio_bnb").text(json['precio_HCN_BNB']);
+          $("#precio_usd").text(json['precio_HCN_USD']);
+          $("#precio_mxn").text(json['precio_HCN_MXN']);
+      });
+    });
+  </script>
 </body>
 </html>
