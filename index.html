@@ -1,7 +1,10 @@
-<!doctype html>
-<html>
+<!DOCTYPE html>
+<html lang="en">
+
 <head>
   <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
   <title>Huachicoin la crypto mexicana para el mundo</title>
   <meta name="title" content="Huachicoin la crypto mexicana para el mundo" />
   <meta name="description" content="Compra y guarda hauchicoins la moneda deflacionario para vencer la inflación y poder ahorrar" />
@@ -11,512 +14,311 @@
   <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
   <link rel="manifest" href="favicon/site.webmanifest">
   <meta name="author" content="Huachicoin Dev Group">
-  <link href='https://fonts.googleapis.com/css?family=Open+Sans:300,400,700' rel='stylesheet' type='text/css'>
-  <link href='https://fonts.googleapis.com/css?family=Pacifico:400' rel='stylesheet' type='text/css'>
-  <script type="text/javascript" src="https://code.jquery.com/jquery-1.9.1.js"></script>
-  <script type="text/javascript" src="assets/jquery.onepage-scroll.js"></script>
-  <link href='assets/onepage-scroll.css' rel='stylesheet' type='text/css'>
-  <meta name="viewport" content="initial-scale=1, width=device-width, maximum-scale=1, minimum-scale=1, user-scalable=no">
-  <style>
-    html {
-      height: 100%;
-    }
-    body {
-      background: #E2E4E7;
-      padding: 0;
-      text-align: center;
-      font-family: 'open sans';
-      position: relative;
-      margin: 0;
-      height: 100%;
-      -webkit-font-smoothing: antialiased;
-    }
-    
-    .wrapper {
-    	height: 100% !important;
-    	height: 100%;
-    	margin: 0 auto; 
-    	overflow: hidden;
-    }
-    
-    a {
-      text-decoration: none;
-    }
-    
-    
-    h1, h2 {
-      width: 100%;
-      float: left;
-    }
-    h1 {
-      margin-top: 100px;
-      color: #000;
-      margin-bottom: 5px;
-      font-size: 70px;
-      letter-spacing: -4px;
-      font-weight: 100;
-    }
-    h1 span {
-      font-size: 26px;
-      margin: 0 5px;
-      text-transform: capitalize;
-      background: rgba(0,0,0,0.85);
-      display: inline-block;
-      color: #6D461D;
-      border-radius: 5px 5px;
-      -webkit-border-radius: 5px 5px;
-      -moz-border-radius: 5px 5px;
-      text-shadow: 0 2px 8px rgba(0, 0, 0, 0.75);
-      padding: 3px 10px;
-    }
-    h2 {
-      color: #6D461D;
-      font-weight: 100;
-      margin-top: 0;
-      margin-bottom: 10px;
-    }
-    
-    .pointer {
-      color: #9b59b6;
-      font-family: 'Pacifico', cursive;
-      font-size: 30px;
-      margin-top: 15px;
-    }
-    code {
-      margin: 20px 1%;
-      float: left;
-      width: 48%;
-      height: 105px;
-      background: rgba(0,0,0,0.1);
-      border: rgba(0,0,0,0.05) 5px solid;
-      border-radius: 5px;
-      padding:5px;
-      color: white;
-      text-align: center;
-      font-size: 15px;
-      margin-top: 25px;
-      display: block;
-      box-sizing: border-box;
-      -webkit-box-sizing: border-box;
-      -moz-box-sizing: border-box;
-    }
-    code.html {
-      color: #7EC9E6;
-    }
-    code.js {
-      color: #FFAD00;
-    }
 
-    .main {
-      float: left;
-      width: 100%;
-      margin: 0 auto;
-    }
-    
-    .main h1 {
-      padding:150px 50px;
-      float: left;
-      width: 100%;
-      font-size: 45px;
-      box-sizing: border-box;
-      -webkit-box-sizing: border-box;
-      -moz-box-sizing: border-box;
-      font-weight: 100;
-      color: white;
-      margin: 0;
-    }
-   
-    .main h1.demo1 {
-      background: #1ABC9C;
-    }
-    
-    .reload.bell {
-      font-size: 12px;
-      padding: 20px;
-      width: 45px;
-      text-align: center;
-      height: 47px;
-      border-radius: 50px;
-      -webkit-border-radius: 50px;
-      -moz-border-radius: 50px;
-    }
-    
-    .reload.bell #notification {
-      font-size: 25px;
-      line-height: 140%;
-    }
-    
-    .reload, .btn{
-      display: inline-block;
-      border: 4px solid #A2261E;
-      border-radius: 5px;
-      -moz-border-radius: 5px;
-      -webkit-border-radius: 5px;
-      background: #CC3126;
-      display: inline-block;
-      line-height: 100%;
-      padding: 0.7em;
-      text-decoration: none;
-      color: #663366;
-      width: 100px;
-      line-height: 140%;
-      font-size: 17px;
-      font-family: open sans;
-      font-weight: bold;
-    }
-    .reload:hover{
-      background: #6b4d69;
-    }
-    .btn {
-      width: 200px;
-      color: rgb(255, 255, 255);
-      border: 4px;
-      background: rgba(102, 51, 102, 0.75);
-    }
-    .btn-gray {
-      width: 200px;
-      color: rgb(255, 255, 255);
-      border: 4px;
-      background: rgba(0, 0, 0, 0.75);
-    }
-    .clear {
-      width: auto;
-    }
-    .btn:hover, .btn:hover {
-      background: #6b4d69;
-    }
-    .btns {
-      width: 410px;
-      margin: 50px auto;
-    }
-    .credit {
-      text-align: center;
-      color: rgba(0,0,0,0.5);
-      padding: 10px;
-      width: 410px;
-      clear: both;
-    }
-    .price {
-      text-align: center;
-      color: #000;
-      margin-top: -5px;
-      width: 410px;
-      clear: both;
-    }
-    .letras-chiquitas {
-      margin-top: -5px;
-      width: 410px;
-      clear: both;
-      font-size: smaller;
-      color: rgba(0,0,0,0.6);
-    }
-    .credit a {
-      color: rgba(0,0,0,0.85);
-      text-decoration: none;
-      font-weight: bold;
-      text-align: center;
-    }
-    
-    .back {
-      position: absolute;
-      top: 0;
-      left: 0;
-      text-align: center;
-      display: block;
-      padding: 7px;
-      width: 100%;
-      box-sizing: border-box;
-      -moz-box-sizing: border-box;
-      -webkit-box-sizing: border-box;
-      background: rgba(255, 255, 255, 0.25);
-      font-weight: bold;
-      font-size: 13px;
-      color: #000;
-      -webkit-transition: all 500ms ease-in-out;
-      -moz-transition: all 500ms ease-in-out;
-      -o-transition: all 500ms ease-in-out;
-      transition: all 500ms ease-in-out;
-    }
-    .back:hover {
-      color: black;
-      background: rgba(255, 255, 255, 0.5);
-    }
-    
-    header {
-      position: relative;
-      z-index: 10;
-    }
-    .main section .page_container {
-      position: relative;
-      top: 25%;
-      margin: 0 auto 0;
-      max-width: 950px;
-      z-index: 3;
-    }
-    .main section  {
-      overflow: hidden;
-    }
-    
-    .main section > img {
-      position: absolute;
-      max-width: 100%;
-      z-index: 1;
-    }
-    
-    .main section.page1 {
-      background: #F4B8DF;
-    }
-    .main section.page1 h1 {
-      text-align: left;
-      padding: 0;
-      margin-bottom: 15px;
-      font-size: 70px;
-      color: black;
-    }
-    .main section.page1 h2 {
-      color: rgba(0,0,0,0.85);
-      text-align: center;
-      width: 435px;
-      line-height: 160%;
-    }
-    .main section .page_container .btns {
-      clear: both;
-      float: left;
-      text-align: center;
-      width: 435px;
-    }
-    .main section .page_container .btns a{
-      text-align: center;
-    }
-    .main section.page2 {
-      background: #555557 url(images/back-phone.png) no-repeat center -150px ;
-    }
-    .main section.page2 > img {
-      position: absolute;
-      top: -300px;
-      left: 50%;
-      margin-left: -1095px;
-    }
-    .main section.page2 .page_container {
-      margin-top: 240px;
-      overflow: hidden;
-    }
-    .main section.page2 h1 {
-      text-align: center;
-      padding: 0;
-      margin-bottom: 15px;
-      font-size: 50px;
-      letter-spacing: -1px;
-      color: white;
-    }
-    .main section.page2 h2 {
-      color: rgba(255,255,255,0.85);
-      text-align: center;
-      line-height: 160%;
-      font-weight: 100;
-    }
-    .viewing-page-2 .back{
-      background: rgba(0, 0, 0, 0.25);
-      color: #FFF;
-      }
-    .main section.page3 {
-      background:url(images/tilted-phone.png) no-repeat 156px -150px ;
-    }
-    .main section.page3 .page_container {
-      overflow: hidden;
-      width: 500px;
-      right: -285px;
-    }
-    .main section.page3 h1 {
-      text-align: left;
-      padding: 0;
-      margin-bottom: 0;
-      font-size: 70px;
-      letter-spacing: -1px;
-      color: black;
-    }
-    .main section.page3 h2 {
-      color: rgba(0,0,0,0.85);
-      text-align: left;
-      line-height: 160%;
-      font-weight: 100;
-      font-size: 21px;
-    }
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Jost:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
 
-    .main section.page4 {
-      background: #F4B8DF;
-    }
-    
-    body.disabled-onepage-scroll .onepage-wrapper  section {
-      min-height: 100%;
-      height: auto;
-    }
-    
-    body.disabled-onepage-scroll .main section .page_container, body.disabled-onepage-scroll .main section.page3 .page_container  {
-      padding: 20px;
-      margin-top: 150px;
-      -webkit-box-sizing: border-box;
-      -moz-box-sizing: border-box;
-      box-sizing: border-box;
-    }
-    
-    body.disabled-onepage-scroll  section .page_container h1{
-      text-align: center;
-      font-size: 50px;
-    }
-    body.disabled-onepage-scroll section .page_container h2, body.disabled-onepage-scroll section .page_container .credit, body.disabled-onepage-scroll section .page_container .btns{
-      text-align: center;
-      width: 100%;
-    }
-    
-    body.disabled-onepage-scroll .main section.page1 > img {
-      position: absolute;
-      width: 80%;
-      left: 10%;
-    }
-    
-    body.disabled-onepage-scroll .main section > img {
-      position: relative;
-      max-width: 80%;
-      bottom: 0;
-    }
-    body.disabled-onepage-scroll code {
-      width: 95%;
-      margin: 0 auto 25px;
-      float: none;
-      overflow: hidden;
-    }
-    
-    body.disabled-onepage-scroll .main section.page3 .page_container {
-      width: 90%;
-      margin-left: auto;
-      margin-right: auto;
-      right: 0;
-    }
-    pre code {
-    scrollbar-color: #666 #201c29;
-    background: 0 0;
-    white-space: pre;
-    -webkit-overflow-scrolling: touch;
-    overflow-x: scroll;
-    display: block;
-    max-width: 100%;
-    min-width: 100px;
-    font-size: 16px;
-    padding: 15px 20px 12px 22px;
-    line-height: 1.75;
-    }
-	  
-body .one .bsa_it_ad { background: transparent; border: none; font-family: inherit; padding: 0 15px 0 10px; margin: 0; text-align: center; }
-body .one .bsa_it_ad:hover img { -moz-box-shadow: 0 0 3px #000; -webkit-box-shadow: 0 0 3px #000; box-shadow: 0 0 3px #000; }
-body .one .bsa_it_ad .bsa_it_i { display: block; padding: 0; float: none; margin: 0 0 5px; }
-body .one .bsa_it_ad .bsa_it_i img { padding: 0; border: none; }
-body .one .bsa_it_ad .bsa_it_t { padding: 6px 0; }
-body .one .bsa_it_ad .bsa_it_d { padding: 0; font-size: 12px; color: #333; }
-body .one .bsa_it_p { display: none; }
-body #bsap_aplink, body #bsap_aplink:hover { display: block; font-size: 10px; margin: 12px 15px 0; text-align: center; }
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
 
-.message {
-  max-width: 550px;
-  margin: 50px auto 0;
-  padding: 14px;
-  background: #72EC80;
-  color: #0E530E;
-  font-weight: normal;
-  font-style: normal;
-  border-radius: 3px;
-}
-
-.success-message a{
-  color: black;
-  border-bottom: 1px dotted #000;
-}
-
-.success-message {
-  background: #72EC80;
-  color: #0E530E;
-}
-
-.error-message a{
-  color: #FFF;
-  border-bottom: 1px dotted #fff;
-}
-
-.error-message {
-  background: #EC7272;
-  color: #FFF;
-}
-
-.socials {
-  text-align: center;
-  background: rgba(255, 255, 255, 0.1);
-  width: 100%;
-  float: left;
-  padding: 9px 5px 5px;
-  margin: 0 0 60px 0;
-}
-.socials > * {
-  display: inline !important;
-}
-.socials .fb-like {
-  top: -5px;
-  min-width: 85px;
-  text-align: left;
-}
-.socials .fb-like > span {
-  vertical-align: top;
-}
-.socials .twitter-share-button {
-  width: 85px  !important;
-}
-</style>
+  <!-- Template Main CSS File -->
+  <link href="assets/css/style-min.css" rel="stylesheet">
 </head>
+
 <body>
-  <div class="wrapper">
-	  <div class="main">
-	    
-      <section class="page1">
-        <div class="page_container">
-          <h1>Huachicoin</h1>
-          <h2>Huachicoin la cryptomoneda del futuro</h2>
-          <p class="credit">Crypto creada por Mexicanos para el mundo</p>
-          <p class="price">Precio en BNB : <strong><span id="precio_bnb">$</span></strong>*</p>
-          <p class="price">Precio en USD : <strong><span id="precio_usd">$</span></strong>*</p>
-          <p class="price">Precio en Pesos Mexicanos : <strong><span id="precio_mxn">$</span></strong>*</p>
-          <p class="letras-chiquitas">* el precio se actualiza cada hora, puede variar en pancakeswap</p>
-          <div class="btns">
-  	        <a class="reload btn" href="https://exchange.pancakeswap.finance/#/swap?outputCurrency=0x0863d3605f2b16183b500e3b5fe205b46739e3e6">🥞Comprar en Pancakeswap🥞</a>
-  	      </div>
-  	    </div>
-  	    <img src="images/coin.png" alt="coin">
-      </section>
-	    
-	    <section id="contract" class="page2">
-	      <div class="page_container">
-          <h1>Verifica nuestros contratos</h1>
-          <h2>Nuestro contrato</h2>
-          <code class="html">
-  	        Próximamente
-  	      </code>
-  	      
-  	      <code class="js">
-	          Próximamente
-	        </code>
-	      </div>
-      </section>
-	    
-	    <section id="how-to-page" class="page3">
-	      <div class="page_container">
-          <h1>¿Quieres comprar huachicoin?</h1>
-          <h2>¿Qué esperas para comprar? Mira el video y compra en pancakeswap</h2>
-          <div class="btns">
-  	        <a class="reload btn-gray" href="https://exchange.pancakeswap.finance/#/swap?outputCurrency=0x0863d3605f2b16183b500e3b5fe205b46739e3e6">🥞Comprar en Pancakeswap🥞</a>
-  	      </div>
-  	    </div>
-      </section>
+
+  <!-- ======= Header ======= -->
+  <header id="header" class="fixed-top ">
+    <div class="container d-flex align-items-center">
+
+      <h1 class="logo me-auto"><a href="index.html">Huachicoin</a></h1>
+
+      <nav id="navbar" class="navbar">
+        <ul>
+          <li><a class="nav-link scrollto active" href="#hero">Inicio</a></li>
+          <li><a class="nav-link scrollto" href="#about">Sobre nuestra Token</a></li>
+          <li><a class="nav-link scrollto" href="#why-us">Como Funciona</a></li>
+          <li><a class="nav-link scrollto" href="#pricing">Capitalización</a></li>
+          <li><a class="nav-link scrollto" href="#social">Redes Sociales</a></li>
+          <li><a class="getstarted scrollto" href="https://exchange.pancakeswap.finance/#/swap?outputCurrency=0x0863d3605f2b16183b500e3b5fe205b46739e3e6">🥞Comprar Huachicoin🥞</a></li>
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav><!-- .navbar -->
+
     </div>
-    <a class="back" href="#how-to-page">¿Como comprar huachicoin?</a>
-  </div>
+  </header><!-- End Header -->
+
+  <!-- ======= Hero Section ======= -->
+  <section id="hero" class="d-flex align-items-center">
+
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6 d-flex flex-column justify-content-center pt-4 pt-lg-0 order-2 order-lg-1" data-aos="fade-up" data-aos-delay="200">
+          <h1>Huachicoin la cryptomoneda del futuro</h1>
+          <h2>Crypto creada por Mexicanos para el mundo</h2>
+          <div class="d-flex justify-content-center justify-content-lg-start">
+            <a href="https://exchange.pancakeswap.finance/#/swap?outputCurrency=0x0863d3605f2b16183b500e3b5fe205b46739e3e6" class="btn-get-started scrollto">🥞Comprar Huachicoin🥞</a>
+            <a href="https://www.youtube.com/watch?v=VtlTqVxm8-4" class="glightbox btn-watch-video"><i class="bi bi-play-circle"></i><span>Mira el vídeo</span></a>
+          </div>
+        </div>
+        <div class="col-lg-6 order-1 order-lg-2 hero-img" data-aos="zoom-in" data-aos-delay="200">
+          <img src="assets/img/hero-img.png" class="img-fluid animated" alt="">
+        </div>
+      </div>
+    </div>
+
+  </section><!-- End Hero -->
+
+  <main id="main">
+
+    <!-- ======= Social Section ======= -->
+    <section id="cliens" class="cliens section-bg">
+      <div class="container">
+
+        <div class="row" data-aos="zoom-in">
+
+          <div class="col-md-2 col-md-offset-1">
+            <a href="https://www.facebook.com/huachicoin"><img src="assets/img/social/facebook.png" class="img-fluid" alt=""></a>
+          </div>
+
+          <div class="col-md-2">
+            <a href="https://www.twitter.com/huachicoin"><img src="assets/img/social/twitter.png" class="img-fluid" alt=""></a>
+          </div>
+
+          <div class="col-md-2">
+            <a href="https://www.youtube.com/channel/UC7hJQ0WQWASpKS_eq-lo4AA"><img src="assets/img/social/youtube.png" class="img-fluid" alt=""></a>
+          </div>
+
+          <div class="col-md-2">
+            <a href="https://www.reddit.com/r/huachicoin"><img src="assets/img/social/reddit.png" class="img-fluid" alt=""></a>
+          </div>
+
+          <div class="col-md-2">
+            <a href="https://www.github.com/huachicoin"><img src="assets/img/social/github.png" class="img-fluid" alt=""></a>
+          </div>
+
+          <div class="col-md-2">
+            <a href="#"><img src="assets/img/social/telegram.png" class="img-fluid" alt=""></a>
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Social Section -->
+
+    <!-- ======= About Us Section ======= -->
+    <section id="about" class="about">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-title">
+          <h2>¿Qué es Huachicoin?</h2>
+        </div>
+
+        <div class="row content">
+          <div class="col-lg-6">
+            <p>
+              La huachicoin es una alternativa amigable dentro de la nueva economia virtual, seguro haz escuchado hablar sobre las criptomonedas, sobre sus riesgos pero tambien sus jugosos beneficios, sin duda, este mercado ha llegado para quedarse y huachicoin es la mejor manera de comenzar por este nuevo mundo.
+
+
+          </div>
+          <div class="col-lg-6 pt-4 pt-lg-0">
+            <p>
+              Huachicoin es la primera moneda mujicana con respaldo de una comunidad mujicana, siendo ellos los primeros que vieron nacer a la moneda y sus multiples aplicaciones, pero es momento de compartirla con el resto de la internet.
+            </p>
+            <a href="#why-us" class="btn-learn-more">Leer Más</a>
+          </div>
+        </div>
+
+      </div>
+    </section><!-- End About Us Section -->
+
+    <!-- ======= Why Us Section ======= -->
+    <section id="why-us" class="why-us section-bg">
+      <div class="container-fluid" data-aos="fade-up">
+
+        <div class="row">
+
+          <div class="col-lg-7 d-flex flex-column justify-content-center align-items-stretch  order-2 order-lg-1">
+
+            <div class="content">
+
+              <h3>La huachicoin es un token <strong>BEP-20</strong>, creado sobre la huachinet, un contrato inteligente que corre en la red de <strong>Binance Smart Chain</strong>.</h3>
+              <p>
+                La huachinet como contrato inteligente se encarga de llevar la contabilidad de todas las transferencias de huachicoin.
+                Ademas, huachinet es quien lleva acabo las 3 cualidades que presenta nuestra moneda:
+              </p>
+            </div>
+
+            <div class="accordion-list">
+              <ul>
+                <li>
+                  <a data-bs-toggle="collapse" class="collapse" data-bs-target="#accordion-list-1"><span>01</span> La huachicoin es una moneda deflacionaria<i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+                  <div id="accordion-list-1" class="collapse show" data-bs-parent=".accordion-list">
+                    <p>
+                      Se crearon 420 millones de huachicoins durante su genesis, el volumen circulante disminuira con el tiempo conforme se use la huachinet, gracias a otra cualidad de la moneda, su mecanismo de quema de moneda.
+                    </p>
+                  </div>
+                </li>
+
+                <li>
+                  <a data-bs-toggle="collapse" data-bs-target="#accordion-list-2" class="collapsed"><span>02</span> Redistribución <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+                  <div id="accordion-list-2" class="collapse" data-bs-parent=".accordion-list">
+                    <p>
+                      Por cada movimiento que ocurren en la huachinet, compra, venta o transferencia entre 2 usuarios, la huachinet aplica un impuesto del 2% sobre el monto total de la transaccion.
+
+                      Se utilizara el 50% del impuesto, es decir, el 1% del monto total sera redistribuido entre todos los usuarios que tengan huachicoin, la cantidad se repartira segun el porcentaje de tenencia de la red.
+                    </p>
+                  </div>
+                </li>
+
+                <li>
+                  <a data-bs-toggle="collapse" data-bs-target="#accordion-list-3" class="collapsed"><span>03</span> Quema de monedas <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+                  <div id="accordion-list-3" class="collapse" data-bs-parent=".accordion-list">
+                    <p>
+                      Como mencionamos en el punto anterior, del impuesto aplicado del 2% sobre la transacción, la mitad será usada para redistribucion, la otra mitad, correspondiente al 1% del monto total, será enviada a una cartera conocida como "burn wallet", un hoyo negro del cual las huachicoins no vuelven a salir nunca más.
+
+                      Desde el genesis de la huachicoin, la burn wallet tiene el 30% de las monedas totales, un equivalente a 130 millones de huachicoins.
+                    </p>
+                  </div>
+                </li>
+
+              </ul>
+            </div>
+
+          </div>
+
+          <div class="col-lg-5 align-items-stretch order-1 order-lg-2 img" style='background-image: url("assets/img/why-us.png");' data-aos="zoom-in" data-aos-delay="150">&nbsp;</div>
+        </div>
+
+      </div>
+    </section><!-- End Why Us Section -->   
+
+    <!-- ======= Pricing Section ======= -->
+    <section id="pricing" class="pricing">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-title">
+          <h2>Capitalización</h2>
+        </div>
+
+        <div class="row">
+
+          <div class="col-lg-4" data-aos="fade-up" data-aos-delay="100">
+            <div class="box">
+              <h3>Precio en BNB</h3>
+              <h4><strong><span id="precio_bnb">0.0000152714002747</span>*</strong></h4>
+              <a href="https://exchange.pancakeswap.finance/#/swap?outputCurrency=0x0863d3605f2b16183b500e3b5fe205b46739e3e6" class="buy-btn">🥞Comprar Huachicoin🥞</a>
+            </div>
+          </div>
+
+          <div class="col-lg-4 mt-4 mt-lg-0" data-aos="fade-up" data-aos-delay="200">
+            <div class="box featured">
+              <h3>Precio en USD</h3>
+              <h4><strong><span id="precio_usd">0.0000152714002747</span>*</strong></h4>
+              <a href="https://exchange.pancakeswap.finance/#/swap?outputCurrency=0x0863d3605f2b16183b500e3b5fe205b46739e3e6" class="buy-btn">🥞Comprar Huachicoin🥞</a>
+            </div>
+          </div>
+
+          <div class="col-lg-4 mt-4 mt-lg-0" data-aos="fade-up" data-aos-delay="300">
+            <div class="box">
+              <h3>Precio Pesos Mexicanos</h3>
+              <h4><strong><span id="precio_mxn">0.0000152714002747</span>*</strong></h4>
+              <a href="https://exchange.pancakeswap.finance/#/swap?outputCurrency=0x0863d3605f2b16183b500e3b5fe205b46739e3e6" class="buy-btn">🥞Comprar Huachicoin🥞</a>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Pricing Section -->
+
+    <!-- ======= Cta Section ======= -->
+    <section id="cta" class="cta">
+      <div class="container" data-aos="zoom-in">
+
+        <div class="row">
+          <div class="col-lg-9 text-center text-lg-start">
+            <h3>Huachicoin disponible en PancakeSwap</h3>
+            <p> PancakeSwap es un intercambio de criptomonedas descentralizado para intercambiar tokens BEP-20. Si está familiarizado con Uniswap o SushiSwap, entonces sabrá cómo funciona PancakeSwap. Cada uno funciona casi exactamente de la misma manera.</p>
+
+            <p>El intercambio PancakeSwap no utiliza libros de pedidos como los intercambios tradicionales. En su lugar, utiliza un modelo de creador de mercado automatizado (AMM) que compara las órdenes de compra y venta directamente con otras en un grupo de liquidez. Los depósitos de los usuarios mantienen fondos de liquidez. Al proporcionar liquidez a dicho grupo, los usuarios pueden ganar tarifas de negociación y tokens de proveedor de liquidez (LP). Los tokens de LP se pueden canjear por el capital inicial depositado, más las tarifas devengadas, menos cualquier pérdida temporal. Además, los tokens LP se pueden apostar, cultivar e intercambiar.</p>
+          </div>
+          <div class="col-lg-3 cta-btn-container text-center">
+            <a class="cta-btn align-middle" href="https://exchange.pancakeswap.finance/#/swap?outputCurrency=0x0863d3605f2b16183b500e3b5fe205b46739e3e6">Comprar Huachicoin</a>
+          </div>
+        </div>
+
+      </div>
+    </section><!-- End Cta Section -->
+
+  </main><!-- End #main -->
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer">
+    <!-- ======= Social Section ======= -->
+    <section id="social" class="cliens section-bg">
+      <div class="container">
+
+        <div class="row" data-aos="zoom-in">
+
+          <div class="col-md-2 col-md-offset-1">
+            <a href="https://www.facebook.com/huachicoin"><img src="assets/img/social/facebook.png" class="img-fluid" alt=""></a>
+          </div>
+
+          <div class="col-md-2">
+            <a href="https://www.twitter.com/huachicoin"><img src="assets/img/social/twitter.png" class="img-fluid" alt=""></a>
+          </div>
+
+          <div class="col-md-2">
+            <a href="https://www.youtube.com/channel/UC7hJQ0WQWASpKS_eq-lo4AA"><img src="assets/img/social/youtube.png" class="img-fluid" alt=""></a>
+          </div>
+
+          <div class="col-md-2">
+            <a href="https://www.reddit.com/r/huachicoin"><img src="assets/img/social/reddit.png" class="img-fluid" alt=""></a>
+          </div>
+
+          <div class="col-md-2">
+            <a href="https://www.github.com/huachicoin"><img src="assets/img/social/github.png" class="img-fluid" alt=""></a>
+          </div>
+
+          <div class="col-md-2">
+            <a href="#"><img src="assets/img/social/telegram.png" class="img-fluid" alt=""></a>
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Social Section -->
+    <div class="container footer-bottom clearfix">
+      <div class="copyright">
+        &copy; Copyright <strong><span>Huachicoin</span></strong>. All Rights Reserved
+      </div>
+      <div class="credits">
+        Designed by Huachicoin Dev Group</a>
+      </div>
+    </div>
+  </footer><!-- End Footer -->
+
+  <div id="preloader"></div>
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
   <script>
     $(document).ready(function(){
       $(".main").onepage_scroll({
@@ -532,5 +334,7 @@ body #bsap_aplink, body #bsap_aplink:hover { display: block; font-size: 10px; ma
       });
     });
   </script>
+
 </body>
+
 </html>
