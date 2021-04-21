@@ -87,23 +87,23 @@
             <a href="https://www.facebook.com/huachicoin"><img src="assets/img/social/facebook.png" class="img-fluid" alt=""></a>
           </div>
 
-          <div class="col-md-2">
+          <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
             <a href="https://www.twitter.com/huachicoin"><img src="assets/img/social/twitter.png" class="img-fluid" alt=""></a>
           </div>
 
-          <div class="col-md-2">
+          <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
             <a href="https://www.youtube.com/channel/UC7hJQ0WQWASpKS_eq-lo4AA"><img src="assets/img/social/youtube.png" class="img-fluid" alt=""></a>
           </div>
 
-          <div class="col-md-2">
+          <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
             <a href="https://www.reddit.com/r/huachicoin"><img src="assets/img/social/reddit.png" class="img-fluid" alt=""></a>
           </div>
 
-          <div class="col-md-2">
+          <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
             <a href="https://www.github.com/huachicoin"><img src="assets/img/social/github.png" class="img-fluid" alt=""></a>
           </div>
 
-          <div class="col-md-2">
+          <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
             <a href="#"><img src="assets/img/social/telegram.png" class="img-fluid" alt=""></a>
           </div>
 
@@ -271,23 +271,23 @@
             <a href="https://www.facebook.com/huachicoin"><img src="assets/img/social/facebook.png" class="img-fluid" alt=""></a>
           </div>
 
-          <div class="col-md-2">
+          <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
             <a href="https://www.twitter.com/huachicoin"><img src="assets/img/social/twitter.png" class="img-fluid" alt=""></a>
           </div>
 
-          <div class="col-md-2">
+          <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
             <a href="https://www.youtube.com/channel/UC7hJQ0WQWASpKS_eq-lo4AA"><img src="assets/img/social/youtube.png" class="img-fluid" alt=""></a>
           </div>
 
-          <div class="col-md-2">
+          <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
             <a href="https://www.reddit.com/r/huachicoin"><img src="assets/img/social/reddit.png" class="img-fluid" alt=""></a>
           </div>
 
-          <div class="col-md-2">
+          <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
             <a href="https://www.github.com/huachicoin"><img src="assets/img/social/github.png" class="img-fluid" alt=""></a>
           </div>
 
-          <div class="col-md-2">
+          <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
             <a href="#"><img src="assets/img/social/telegram.png" class="img-fluid" alt=""></a>
           </div>
 
@@ -322,12 +322,6 @@
   <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
   <script>
     $(document).ready(function(){
-      $(".main").onepage_scroll({
-        sectionContainer: "section",
-        responsiveFallback: 600,
-        loop: true
-      });
-
       $.getJSON("https://raw.githubusercontent.com/huachicoin/Huachicoin_Scraper/main/huachicoin_data.json", function(json) {
           $("#precio_bnb").text(json['precio_HCN_BNB']);
           $("#precio_usd").text(json['precio_HCN_USD']);
